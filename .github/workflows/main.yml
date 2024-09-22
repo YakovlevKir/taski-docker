@@ -156,6 +156,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
+    environment: main
     needs: 
       # Дождёмся билда всех образов Taski
       - build_and_push_to_docker_hub
